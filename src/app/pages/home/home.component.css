@@ -1,0 +1,105 @@
+
+main {
+  display: flex;
+  flex: 1 1 50%;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+
+main > div {
+  width: 50%;
+  position: relative;
+}
+
+.nav nav {
+  display: flex;
+  flex-direction: column;
+  font-family: 'font-title';
+  font-size: 4vw;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.nav nav a:hover {
+  transform: translate(5px);
+  color: var(--primary);
+}
+
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.name-container h1 {
+  font-size: 7cqi;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.name-container h3{
+  font-family: 'font-title';
+  font-size: 6.5vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: -30px;
+}
+
+.subtitle {
+  margin-top: -15px;
+}
+
+.subtitle span {
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+
+.linkedin-link a {
+  position: absolute;
+  right: -25px;
+  top: 30px;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+
+.linkedin-link a:hover {
+  transform: rotate(90deg) translate(5px);
+  color: var(--primary);
+}
+
+.social-links{
+  position: absolute;
+  bottom: 31px;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  gap: 105px;
+
+}
+
+.social-links a {
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
+.social-links a:hover {
+  transform: rotate(-90deg) translate(5px);
+  color: var(--primary);
+}
+
+
+@media screen and (max-width: 768px) {
+  main > div {
+    width: 100%;
+  }
+}

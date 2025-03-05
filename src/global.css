@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@font-face {
+  font-family: "font-title";
+  src: url("/assets/fonts/Volgarie.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #ffe9f5;
+  --primary: #461212;
+  --dark: #181818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: var(--dark);
+}
+
+body {
+  font-family: "Montserrat", serif;
+  background-color: var(--bg-color);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 2rem 3rem;
+}
+
+.page-title {
+  font-family: "font-title";
+  font-size: 7vw;
+  letter-spacing: 2px;
+  font-weight: 400;
+}

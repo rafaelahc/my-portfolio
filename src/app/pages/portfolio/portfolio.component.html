@@ -1,0 +1,25 @@
+<nav>
+  <a class="home-link" routerLink="">Home</a>
+</nav>
+
+
+<main>
+  <div class="right-section">
+    <div class="content">
+      <h1 class="page-title">Portfolio</h1>
+      <div class="portfolio-content">
+      <p>Here, you'll find a collection of projects I've developed both individually and as part of a team. These projects were built to practice and explore various technologies, as well as to solve real-world problems. Some of them are the result of personal studies, while others reflect collaborative efforts aimed at creating innovative solutions. Each project represents my continuous learning journey and passion for development.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="left-section projects">
+    <ul>
+      <li *ngFor="let project of projects">
+        <a (click)="goToProject(project.id)">{{ project.name }}</a>
+        <span>{{ project.tech }}</span>
+      </li>
+    </ul>
+
+  </div>
+</main>
